@@ -69,13 +69,14 @@ print(f"result is: {dicConvert(list1, list2)}")
 #challenge 5
 
 dic1 = {("19.07'53.2", "72.54'51.0"): "Mumbai", ("28.33'34.1", "77.06'16.6"): "Delhi"}
+dic2 = {}
 for key, value in dic1.items():
     dic = {}
     dic["Latitude"] = key[0]
-    dic["longtitude"] = key[1]    
-    dic1 = {}
-    dic1[value] = dic
-    print(dic1)
+    dic["longtitude"] = key[1]
+    dic2[value] = dic
+
+print(dic2)
 
 "----------------------------------------------------------------------------------------------------"
 
